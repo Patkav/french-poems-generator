@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>AI Poem Generator</title>
+    <title>AI French Poem Generator</title>
   </head>
   <body>
     <div class="container">
@@ -13,7 +14,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="poem-generator-form">
           <input
             type="text"
             placeholder="Enter the topic of the French poem"
@@ -24,12 +25,9 @@
           />
           <input type="submit" class="submit-button" />
         </form>
+        <div class="poem" id="poem"></div>
       </main>
-      <div class="poem">
-        La tombe dit à la rose
-        <br />
-        Des pleurs dont l'aube t'arrose
-      </div>
+
       <footer>
         This AI porject was coded by
         <a
