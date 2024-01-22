@@ -22,15 +22,23 @@ a {
   max-width: 600px;
 }
 
-form {
-  padding: 30px;
+.form-container {
   background-color: white;
+  margin-bottom: 30px;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   border-radius: 10px;
+  padding: 15px 20px;
+}
+form {
   display: flex;
-  margin-bottom: 30px;
 }
 
+.hint {
+  line-height: 1.5;
+  margin-top: 5px;
+  opacity: 0.6;
+  font-size: 12px;
+}
 .instructions {
   padding: 16px;
   border: 1px solid rgba(39, 33, 66, 0.5);
@@ -62,8 +70,31 @@ form {
   border-radius: 10px;
 }
 
+.hidden {
+  display: none;
+}
+
+.poem strong {
+  color: #885df1;
+}
 footer {
   text-align: center;
   font-size: 13px;
   margin-top: 30px;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
